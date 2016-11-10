@@ -39,7 +39,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -47,9 +46,9 @@
       <Project>{9d501703-9bdf-4c5f-b0ad-262c0a32b045}</Project>
       <Name>CarFuel.Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CarFuel.Service\CarFuel.Service.csproj">
+    <ProjectReference Include="..\CarFuel.Service\CarFuel.Services.csproj">
       <Project>{6d99b722-e1b4-44c9-8a08-90f434f3d35d}</Project>
-      <Name>CarFuel.Service</Name>
+      <Name>CarFuel.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

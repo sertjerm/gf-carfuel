@@ -14,7 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{5B6688
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarFuel.web", "CarFuel.web\CarFuel.web.csproj", "{8030FE24-3919-4F16-AB35-24EE6A92679B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarFuel.Service", "CarFuel.Service\CarFuel.Service.csproj", "{6D99B722-E1B4-44C9-8A08-90F434F3D35D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarFuel.Services", "CarFuel.Service\CarFuel.Services.csproj", "{6D99B722-E1B4-44C9-8A08-90F434F3D35D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarFuel.Data", "CarFuel.Data\CarFuel.Data.csproj", "{2685C695-E039-4DEF-A559-627DC395882C}"
 EndProject
