@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 
@@ -14,8 +16,16 @@ namespace CarFuel.Models
             FillUps = new List<FillUp>();
           //  AverageConsumptionRate = null;
         }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public Guid Id { get; set; }
+
+        [Required]
+        [StringLength(20)]
         public string Make { get; set; }
 
+        [Required]
+        [StringLength(30)]
         public string Model { get; set; }
 
         public List<FillUp> FillUps { get; set; }

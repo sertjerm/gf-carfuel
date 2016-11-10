@@ -17,6 +17,8 @@ namespace CarFuel.Models
          // _ConsumptionRate= (Odometer - NextFillUp.Odometer) / NextFillUp.Liters;
 
         }
+
+        public int Id { get; set; }
         public int Odometer { get; set; }
 
         public double Liters { get; set; }
