@@ -35,6 +35,9 @@ namespace CarFuel.Models
         [StringLength(30)]
         public string Color { get; set; }
 
+        [StringLength(40)]
+        public string Owner { get; set; }
+
         public virtual ICollection<FillUp> FillUps { get; set; }
 
 

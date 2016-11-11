@@ -15,6 +15,7 @@ using CarFuel.Data;
 using CarFuel.Models;
 using CarFuel.Service;
 using System.Data.Entity;
+using CarFuel.web.Models;
 
 namespace CarFuel.web
 {
@@ -45,8 +46,8 @@ namespace CarFuel.web
             builder.RegisterType<CarRepository>().As<IRepository<Car>>();
             builder.RegisterType<CarService>().As<IService<Car>>();
 
-            //builder.RegisterType<CarFuelDb>().As<IService<Year>>();
-            //builder.RegisterType<SettingService>().As<IService<Setting>>();
+           builder.RegisterType<UserService>().As<IUserService>();
+            //builder.RegisterType<SettingService>().As<IServiceSetting>>();
 
             builder.RegisterType<CarFuelDb>().As<DbContext>();
 

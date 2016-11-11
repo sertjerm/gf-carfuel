@@ -51,15 +51,6 @@
     <Compile Include="CarFuelDb.cs" />
     <Compile Include="CarRepository.cs" />
     <Compile Include="IRepository_T.cs" />
-    <Compile Include="Migrations\201611100925008_InitialCreate.cs" />
-    <Compile Include="Migrations\201611100925008_InitialCreate.Designer.cs">
-      <DependentUpon>201611100925008_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201611110256399_Add more cars info..cs" />
-    <Compile Include="Migrations\201611110256399_Add more cars info..Designer.cs">
-      <DependentUpon>201611110256399_Add more cars info..cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RepositoryBase.cs" />
   </ItemGroup>
@@ -72,14 +63,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201611100925008_InitialCreate.resx">
-      <DependentUpon>201611100925008_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201611110256399_Add more cars info..resx">
-      <DependentUpon>201611110256399_Add more cars info..cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -201,6 +201,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\UserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -318,6 +319,7 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\Account\Index.cshtml" />
     <Content Include="Views\Cars\Index.cshtml" />
+    <Content Include="Views\Cars\Add.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
