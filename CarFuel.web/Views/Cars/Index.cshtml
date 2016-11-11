@@ -1,2 +1,16 @@
-﻿
-Carssss
+﻿@using CarFuel.Models
+@model IEnumerable<Car>
+
+@{
+    ViewBag.Title = "Cars";
+}
+
+<h2>Cars</h2>
+@foreach (var c in Model)
+{
+    <div>
+        @c.Make / @c.Model
+        @c.AverageConsumptionRate KML
+    </div>
+}
+Total = @Model.Count() cars.

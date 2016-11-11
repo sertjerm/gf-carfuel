@@ -9,7 +9,8 @@ using System.Data.Entity;
 
 namespace CarFuel.Data
 {
-    public class CarRepository:ResositoryBase<Car>{
+    public class CarRepository : RepositoryBase<Car>
+    {
         public CarRepository(DbContext context)
             : base(context)
         {

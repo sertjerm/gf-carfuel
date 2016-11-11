@@ -28,7 +28,14 @@ namespace CarFuel.Models
         [StringLength(30)]
         public string Model { get; set; }
 
-        public List<FillUp> FillUps { get; set; }
+        [Required]
+        [StringLength(10)]
+        public string PlateNo { get; set; }
+
+        [StringLength(30)]
+        public string Color { get; set; }
+
+        public virtual ICollection<FillUp> FillUps { get; set; }
 
 
         public FillUp AddFillUp(int odometer, double liters,bool forgot=false)
@@ -39,7 +46,7 @@ namespace CarFuel.Models
             f1.ForgotPrevios = forgot;
 
             //if (FillUps.Count > 0)
-            if (FillUps.Any<FillUp>())
+            if (FillUps.Any())
             {
                 // FillUp f0 = 
                 //FillUps[FillUps.Count-1].NextFillUp = f1;

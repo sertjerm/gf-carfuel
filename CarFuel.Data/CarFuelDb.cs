@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CarFuel.Data
 {
-    public class CarFuelDb
+    public class CarFuelDb:DbContext
     {
         public DbSet<Car> Cars { get; set; }
     }
